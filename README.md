@@ -1,4 +1,7 @@
 # Tradmill
+
+![Screenshot](screenshot.png)
+
 A new &amp; fresh wireless treadmill controller.  Made for Raspberry Pi.  Incline control not working yet, and probably never will as the Raspberry Pi only has 1 pin that really works with PWM.
 
 ###Setup
