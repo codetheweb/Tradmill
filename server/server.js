@@ -1,4 +1,4 @@
-var root = "/home/pi/treadmill/";
+var root = "/home/pi/tradmill/";
 
 Meteor.startup(function () {
   Meteor.call("command", "sudo pkill python");
