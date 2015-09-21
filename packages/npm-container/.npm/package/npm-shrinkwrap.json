@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "pi-gpio": {
+      "version": "0.0.7"
+    }
+  }
+}

@@ -1,0 +1,278 @@
+/*
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: -webkit-gradient(
+  	linear,
+  	left top,
+  	left bottom,
+  	color-stop(0, #515E9B),
+  	color-stop(1, #9275C6)
+  );
+  background-image: -o-linear-gradient(bottom, #515E9B 0%, #9275C6 100%);
+  background-image: -moz-linear-gradient(bottom, #515E9B 0%, #9275C6 100%);
+  background-image: -webkit-linear-gradient(bottom, #515E9B 0%, #9275C6 100%);
+  background-image: -ms-linear-gradient(bottom, #515E9B 0%, #9275C6 100%);
+  background-image: linear-gradient(to bottom, #515E9B 0%, #9275C6 100%);
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container {
+  width: 35%;
+  height: 85%;
+  text-align: center;
+  background-color: rgba(34, 34, 91, 0.4);
+  -moz-box-shadow: 0 9px 40px -7px #22225B;
+  -webkit-box-shadow: 0 9px 40px -7px #22225B;
+  box-shadow: 0 9px 40px -7px #22225B;
+  color: #FAFAFB;
+  font-family: "Lato Light";
+  border-radius: 10px;
+}
+
+.profile-icon > img{
+  width: 4%;
+  height: auto;
+  position: absolute;
+  top: 9%;
+  left: 34%;
+  border-radius: 100px;
+}
+
+.profile-name {
+  position: absolute;
+  left: 39%;
+  top: 11%;
+}
+
+.time {
+  position: absolute;
+  top: 9.5%;
+  left: 61.5%;
+  font-size: 200%;
+}
+
+.status {
+  width: 35%;
+  height: 10vh;
+  margin-top: 17%;
+  border-radius: 5px;
+  border: none;
+  
+  background-image: -webkit-gradient(
+	  linear,
+	  left top,
+	  left bottom,
+	  color-stop(0, #E34F4F),
+	  color-stop(1, #DD588B)
+  );
+  background-image: -o-linear-gradient(bottom, #E34F4F 0%, #DD588B 100%);
+  background-image: -moz-linear-gradient(bottom, #E34F4F 0%, #DD588B 100%);
+  background-image: -webkit-linear-gradient(bottom, #E34F4F 0%, #DD588B 100%);
+  background-image: -ms-linear-gradient(bottom, #E34F4F 0%, #DD588B 100%);
+  background-image: linear-gradient(to bottom, #E34F4F 0%, #DD588B 100%);
+  
+  -moz-box-shadow: 0 0 20px -6px #22225B;
+  -webkit-box-shadow: 0 0 20px -6px #22225B;
+  box-shadow: 0 0 20px -6px #22225B;
+  
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+  transition-property: 1s;
+  
+  font-size: 200%;
+  font-family: "Lato Light";
+  color: rgba(250, 250, 251, 0.8);
+}
+
+.status:hover {
+  -moz-box-shadow: 0 20px 28px -6px #22225B;
+  -webkit-box-shadow: 0 20px 28px -6px #22225B;
+  box-shadow: 0 20px 28px -6px #22225B;
+}
+
+.controls > button {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border: 2px solid rgba(32, 171, 154, 0.5);
+  border-radius: 50%;
+  color: rgba(32, 171, 154, 1);
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  font-size: 180%;
+  padding: 0px;
+  
+  transition-delay: 0.05s;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+.controls > button:hover {
+  -moz-box-shadow: 0 0 40px #84AEBA;
+  -webkit-box-shadow: 0 0 40px #84AEBA;
+  box-shadow: 0 0 40px #84AEBA;
+  
+  background: rgba(32, 171, 154, 0.5);
+  color: #FAFAFA;
+}
+
+.controls {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  left: 40%;
+  top: 37%;
+}
+
+nav > button {
+  position: absolute;
+  bottom: 7.5%;
+  left: 32.5%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-top: 1px solid rgba(250, 250, 251, 0.2);
+  height: 7%;
+  width: 17.5%;
+  color: rgba(32, 171, 154, 1);
+  font-size: 130%;
+  
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-delay: 0.1s;
+  
+  font-family: "Lato Light";
+}
+
+nav > button.clicked {
+  color: rgba(250, 250, 251, 0.9);
+  border-top: 1px solid #FAFAFB;
+  
+  background-image: -webkit-gradient(
+	  linear,
+	  left top,
+	  left bottom,
+	  color-stop(0, rgba(227, 79, 79, 0.3)),
+	  color-stop(1, rgba(221, 88, 139, 0.3))
+  );
+  background-image: -o-linear-gradient(bottom, rgba(227, 79, 79, 0.3) 0%, rgba(221, 88, 139, 0.3) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(227, 79, 79, 0.3) 0%, rgba(221, 88, 139, 0.3) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(227, 79, 79, 0.3) 0%, rgba(221, 88, 139, 0.3) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(227, 79, 79, 0.3) 0%, rgba(221, 88, 139, 0.3) 100%);
+  background-image: linear-gradient(to bottom, rgba(227, 79, 79, 0.3) 0%, rgba(221, 88, 139, 0.3) 100%);
+}
+
+nav > .today:hover:not(.clicked) {
+  -moz-box-shadow: 9px -5px 20px -3px #22225B;
+  -webkit-box-shadow: 9px -5px 20px -3px #22225B;
+  box-shadow: 9px -5px 20px -3px #22225B;
+  border-top: 1px solid #FAFAFB;
+}
+
+nav > .graphs:hover:not(.clicked) {
+  -moz-box-shadow: -9px -5px 20px -3px #22225B;
+  -webkit-box-shadow: -9px -5px 20px -3px #22225B;
+  box-shadow: -9px -5px 20px -3px #22225B;
+  border-top: 1px solid #FAFAFB;
+}
+
+.today {
+  border-bottom-left-radius: 10px;
+}
+
+.today.clicked {
+  -moz-box-shadow: 5px -3px 11px -5px #22225B;
+  -webkit-box-shadow: 5px -3px 11px -5px #22225B;
+  box-shadow: 5px -3px 11px -5px #22225B;
+}
+
+.graphs {
+  left: 50%;
+  border-bottom-right-radius: 10px;
+}
+
+.graphs.clicked {
+  -moz-box-shadow: -5px -3px 11px  -5px #22225B;
+  -webkit-box-shadow: -5px -3px 11px -5px #22225B;
+  box-shadow: -5px -3px 11px -5px #22225B;
+}
+
+.rate {
+  font-size: 250%;
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  left: 45%;
+  top: 30%;
+}
+
+.stats {
+  position: absolute;
+  width: 20%;
+  height: 3%;
+  top: 55%;
+  left: 40%;
+  font-size: 300%;
+}
+
+.stats > span {
+  display: block;
+}
+
+.small {
+  font-size: 40%;
+  color: rgba(32, 171, 154, 1);
+}
+
+.graphs-container {
+  display: none;
+}
+
+.burned {
+  font-size: 60%;
+}
+
+.unit {
+  font-size: 60%;
+  width: 5%;
+  height: 5%;
+  margin-top: 40%;
+}
+
+.mph::before {
+  content: "MPH";
+}
+
+.cal::before {
+  content: "CAL";
+}
+
+.mi::before {
+  content: "MI";
+}
+*/
+
+body {
+  background: -webkit-linear-gradient(90deg, #00C9FF 10%, #92FE9D 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #00C9FF 10%, #92FE9D 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #00C9FF 10%, #92FE9D 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #00C9FF 10%, #92FE9D 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #00C9FF 10%, #92FE9D 90%); /* W3C */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+}
